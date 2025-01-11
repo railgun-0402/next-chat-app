@@ -1,7 +1,11 @@
+import ChatForm from "./components/chat/ChatForm";
+import ChatMessage from "./components/chat/ChatMessage";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World</h1>
-    </main>
+    <>
+      <ChatMessage />
+      <ChatForm />
+    </>
   );
 }
