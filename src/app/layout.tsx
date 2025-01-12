@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AppProvider from "./provider";
 import Header from "./components/layout/Header";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
